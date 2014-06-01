@@ -37,8 +37,9 @@ public class BusinessActivity extends ParentActivity implements OnClickListener{
 		super.onCreate(savedInstanceState);
 		
 		ActionBar actionBar = getSupportActionBar();
-		actionBar.setHomeButtonEnabled(true);
+		actionBar.setDisplayHomeAsUpEnabled(true);
 		actionBar.setDisplayShowTitleEnabled(true);
+		actionBar.setDisplayShowHomeEnabled(false);
 		actionBar.setTitle("宽带办理");
 		
 		setContentView(R.layout.activity_business);
