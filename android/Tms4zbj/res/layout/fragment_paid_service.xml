@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/paid_title_function_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:text= "方式一" />
+
+    <RelativeLayout
+        android:id="@+id/paid_function_one_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/paid_title_function_one"
+        android:layout_marginTop="10dp" >
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/paid_title_function_sec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/paid_function_one_container"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="31dp"
+        android:text="上门取件服务" />
+
+    <TextView
+        android:id="@+id/paid_sec_name_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/paid_title_function_sec"
+        android:layout_below="@+id/paid_title_function_sec"
+        android:layout_marginTop="23dp"
+        android:text="我的姓名：" />
+
+    <EditText
+        android:id="@+id/paid_sec_name_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/paid_sec_name_title"
+        android:layout_alignBottom="@+id/paid_sec_name_title"
+        android:layout_toRightOf="@+id/paid_sec_name_title"
+        android:singleLine="true"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/paid_sec_phone_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/paid_sec_name_title"
+        android:layout_below="@+id/paid_sec_name_content"
+        android:layout_marginTop="40dp"
+        android:text="我的电话：" />
+
+    <EditText
+        android:id="@+id/paid_sec_phone_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/paid_sec_phone_title"
+        android:layout_alignBottom="@+id/paid_sec_phone_title"
+        android:layout_alignLeft="@+id/paid_sec_name_content"
+        android:ems="10"
+        android:singleLine="true"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/paid_sec_address_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/paid_sec_phone_title"
+        android:layout_below="@+id/paid_sec_phone_content"
+        android:layout_marginTop="40dp"
+        android:text="我的地址：" />
+
+    <EditText
+        android:id="@+id/paid_sec_address_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/paid_sec_phone_content"
+        android:layout_alignTop="@+id/paid_sec_address_title"
+        android:ems="10"
+        android:maxLines="2"
+        android:minLines="2"
+        android:gravity="top|left"
+        android:inputType="textPostalAddress" />
+
+    <Button
+        android:id="@+id/paid_sec_submit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/paid_sec_address_content"
+        android:layout_below="@+id/paid_sec_address_content"
+        android:layout_marginTop="20dp"
+        android:text="我需要上门取件" />
+
+</RelativeLayout>

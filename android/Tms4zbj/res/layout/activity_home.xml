@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/home_activity"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#888888"
+        />
+
+    <RelativeLayout
+        android:id="@+id/home_item_business"
+        android:layout_width="160dp"
+        android:layout_height="180dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/home_activity"
+        android:background="#cccccc" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:text="业务办理" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/home_item_phoneno"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/home_item_business"
+        android:layout_toRightOf="@+id/home_item_business"
+        android:background="#AAAAAA" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/home_item_service_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/home_item_business"
+        android:background="#AAAAAA">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/home_item_service_network"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignRight="@+id/home_item_business"
+        android:layout_below="@+id/home_item_business"
+        android:layout_above="@+id/home_item_service_mobile"
+        android:background="#888888"
+         >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/home_item_personal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignLeft="@+id/home_item_phoneno"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="#888888">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/home_split"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/home_item_phoneno"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/home_item_phoneno" >
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/home_item_commerce"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/home_split"
+        android:layout_below="@+id/home_split"
+        android:layout_above="@+id/home_item_personal"
+        android:background="#dddddd" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/home_item_sales"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/home_item_commerce"
+        android:layout_below="@+id/home_split"
+        android:layout_above="@+id/home_item_personal"
+        android:layout_alignParentRight="true"
+        android:background="#999999" >
+    </RelativeLayout>
+
+</RelativeLayout>
